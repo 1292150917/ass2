@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#message .message {
+  margin: 0 auto;
+  height: 500px;
+  border: 1px solid #999;
+  padding: 16px;
+  background: #fafafa;
+  width: 80%;
+  overflow: auto;
+}
+
+.pin-img{
+  display: none;
+}
+
+#message #large {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-items: center;
+  z-index: 10;
+  display: none;
+  align-items: center;
+}
+
+#message #large img {
+  display: block;
+  margin: 0 auto;
+}
+
+#message .message-operator {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#message .message-operator img {
+  width: 46px;
+  position: relative;
+  top: 19px;
+}
+
+#message .message-operator input {
+  width: 59%;
+  height: 31px;
+}
+
+#message .message-operator button {
+
+  width: 68px;
+  height: 37px;
+}
+
+#message .message>div img {
+  width: 30px;
+  position: relative;
+  top: 10px;
+}
+
+#message .that {
+  text-align: right;
+}
+
+#message .context {
+  padding: 4px 17px;
+  background: #f4eded;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+#message .message-info {
+  border: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0px 0px 3px 1px #ccc;
+  position: absolute;
+  z-index: 1;
+  border: 4px;
+  display: none;
+  left: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#message .operation {
+  height: 50px;
+  position: absolute;
+  display: none;
+}
+
+#message .operation button {
+  display: block;
+  height: 24px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+#message .message-title {
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  line-height: 32px;
+  margin-top: 22px;
+}
+
+#message .leave {
+
+  text-align: right;
+  margin-right: 11%;
+  margin-top: 13px;
+  color: #0018ff;
+}
+
+#message .invite-title {
+  color: #999;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 7px;
+}
+
+#message .invite>div {
+
+  width: 200px;
+  overflow: auto;
+  bottom: 27px;
+  border: 1px solid #ddd;
+  max-height: 500px;
+  position: absolute;
+  background: #fff;
+  display: none;
+  right: 0;
+}
+
+#message .invite>div>p {
+  text-align: left;
+  text-indent: 20px;
+  margin-top: 10px;
+}
+
+
+#message .invite {
+  text-align: right;
+  background: #fff;
+  position: relative;
+  margin-right: 11%;
+  margin-top: 13px;
+}
+
+#message .invite span {
+  color: #0018ff;
+}
+
+#message .rest {
+  margin-top: 20px;
+  position: relative;
+}
+
+#message .pin {
+  position: fixed;
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  display: none;
+  border: 1px solid #999;
+  left: 30%;
+  padding: 3px 10px;
+  margin-top: 60px;
+  z-index: 1;
+  background: #fff;
+}
+
+#message .pin img {
+
+  width: 15px;
+  position: absolute;
+  right: 6px;
+  top: 4px;
+}
+
+#message .message-type {
+  text-align: center;
+}
+
+#message .message-type button {
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+body #message  .message img {
+  margin-left: 5px;
+  position: relative;
+  top: 0px;
+}
+
+#message .loding {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 14px;
+}
+
+#message .respond {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  display: none;
+  padding: 5px;
+}
+
+#message .respond span{
+  margin-right: 10px;
+}
+
+#message .chartlet{
+  position: absolute;
+  top: 10px;
+  left: 117px;
+}

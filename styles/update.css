@@ -1,0 +1,28 @@
+#login_update .public {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 44px;
+  margin-top: 30px;
+}
+
+
+#login_update button {
+  padding: 4px 22px;
+  color: #254cc2;
+  margin-top: 10px;
+}
+
+#login_update input,
+#login_update select {
+  border: 1px solid #ddd;
+  width: 200px;
+  height: 29px;
+  border-radius: 4px;
+  margin-left: 9px;
+}
+
+#login_update .password-img {
+  width: 20px;
+  position: relative;
+  top: 5px;
+}

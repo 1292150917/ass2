@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/update.css">
+  <link rel="stylesheet" href="./styles/message.css">
+</head>
+
+<body>
+  <!-- 登录& 注册页面 -->
+  <div id="user-login">
+    <div id="login" class="public">
+      <div>
+        <h4>Login</h4>
+        <div>
+          <span>Email</span>
+          <input name="email"  type="text">
+        </div>
+        <div>
+          <span>Password</span>
+          <input name="password" type="password">
+        </div>
+        <button onclick="authLogin()" id="loginAuth">Login</button>
+        <button onclick="registerDisplay()">Register</button>
+      </div>
+    </div>
+
+    <div class="public" id="register">
+      <div>
+        <h4>Register</h4>
+        <div>
+          <span>Email</span>
+          <input name="email" type="text">
+        </div>
+        <div>
+          <span>Name</span>
+          <input name="name" type="text">
+        </div>
+        <div>
+          <span>Password</span>
+          <input name="password" type="password">
+        </div>
+        <div>
+          <span>Confirm Password</span>
+          <input name="confirmPassword" type="password">
+        </div>
+        <button onclick="registerMessage()">Register</button>
+      </div>
+    </div>
+  </div>
+  <!-- 选择频道列表 -->
+  <div id="home">
+    <div class="add-project-message">
+      <div id="projectBack">
+        Back
+      </div>
+      <h4>Create Channel</h4>
+      <div>
+        <span>Name</span>
+        <input name="name" type="text">
+      </div>
+      <div>
+        <span>Description</span>
+        <input name="description" type="text">
+      </div>
+      <div>
+        <span>Type</span>
+        <select name="" id="" name="private">
+          <option value="private">Private Channel</option>
+          <option value="public">Public Channel</option>
+        </select>
+      </div>
+      <button id="" onclick="addMessage()">Confirm</button>
+    </div>
+    <div id="list">
+      <button id="addProject">Create Channel</button>
+      <div>
+        <button class="have" style="display: none;">Authority</button>
+        <button class="unknown" style="display: none;">Other</button>
+      </div>
+      <div id="list-message">
+      </div>
+    </div>
+    <div id="Information">
+      <p>Modifying Personal Information</p>
+    </div>
+  </div>
+
+  <!-- 更改个人信息 -->
+  <div id="login_update">
+    <div id="infoBack">
+      Back
+    </div>
+    <div class="public">
+      <h4>Change Profile</h4>
+      <div>
+        <span>Name</span>
+        <input name="name" type="text">
+      </div>
+      <div>
+        <span>Email</span>
+        <input name="email" disabled type="text">
+      </div>
+      <div>
+        <span>Bio</span>
+        <input name="bio" type="text">
+      </div>
+      <div>
+        <span>Password</span>
+        <input name="password" type="password">
+        <img class="password-img" src="./img/eye.png" alt="" onclick="eye(event)">
+      </div>
+      <div>
+        <span>Image</span>
+        <input type="file" id="file">
+        <img src="" id="fileImg" alt="">
+      </div>
+      <button onclick="updateMessage()">Modifing</button>
+    </div>
+  </div>
+
+  <!-- 聊天页面 -->
+  <div id="message">
+    <div id="messageBack">
+      Back
+    </div>
+    <div class="message-title"></div>
+    <div class="pin">
+      <span></span>
+      <img class="pin-img" src="./img/pin.png" alt="">
+    </div>
+    <div class="message-type">
+      <button>Show All Messages</button>
+      <button>Pinned Messgae List</button>
+      <button>Image list</button>
+    </div>
+    <div class="message"></div>
+    <div class="message-operator">
+      <img src="./img/images.png" alt="">
+      <input type="text" id="inputValue">
+      <button id="send">Send</button>
+    </div>
+
+    <div class="invite">
+      <div>
+      </div>
+      <span>Invite User</span>
+    </div>
+    <div class="leave">Leave Channel</div>
+
+    <div class="operation">
+      <button class="delete">Delete</button>
+      <button class="update">Update</button>
+      <button class="butpin">Pin</button>
+    </div>
+
+    <div class="message-info">
+      <p><span></span></p>
+      <p><span></span></p>
+      <p><span></span></p>
+      <p><span></span></p>
+      <img style="width: 42px;" src="./img/head.png" alt="">
+    </div>
+
+    <input type="file" style="display: none;">
+
+    <div id="large">
+      <img src="" id="large-img" alt="">
+    </div>
+
+    <!-- 回应 -->
+    <div class="respond">
+      <span>&#128569;</span>
+      <span>&#128573;</span>
+      <span>&#128576;</span>
+      <span>&#128049;</span>
+      <span>&#128572;</span>
+      <span>&#129396;</span>
+    </div>
+  </div>
+</body>
+
+<script src="./src/fetch.js"></script>
+
+<!-- 公共方法 -->
+<script src="./src/public.js"></script>
+<!-- 主要的逻辑函数 -->
+<script src="./src/index.js"></script>
+<!-- 封装方法 比如图片的base64转换 -->
+<script src="./src/update.js"></script>
+
+</html>
